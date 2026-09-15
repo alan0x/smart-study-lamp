@@ -1,0 +1,35 @@
+{
+  "probe_sizes_mm": {
+    "base_entry": [
+      6.0,
+      8.0,
+      66.0
+    ],
+    "column_cable": [
+      6.0,
+      8.0,
+      446.0
+    ],
+    "arm_cable": [
+      6.0,
+      328.0,
+      8.0
+    ],
+    "LED_feed": [
+      8.0,
+      6.0,
+      20.0
+    ],
+    "screen_exit": [
+      10.0,
+      16.0,
+      6.0
+    ],
+    "camera_USB_plug_allowance": [
+      14.0,
+      12.0,
+      28.0
+    ]
+  },
+  "collisions": []
+}

@@ -1,0 +1,264 @@
+{
+  "parts": [
+    {
+      "part": "01_hidden_chassis",
+      "print_bounds_mm": [
+        252.0,
+        232.0,
+        80.0
+      ],
+      "volume_cm3": 461.23,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 4170
+    },
+    {
+      "part": "02_rounded_mac_shell",
+      "print_bounds_mm": [
+        260.0,
+        240.0,
+        84.0
+      ],
+      "volume_cm3": 512.68,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 2396
+    },
+    {
+      "part": "03_column_lower_240",
+      "print_bounds_mm": [
+        42.0,
+        48.0,
+        240.0
+      ],
+      "volume_cm3": 151.92,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1404
+    },
+    {
+      "part": "04_column_upper_220",
+      "print_bounds_mm": [
+        42.0,
+        48.0,
+        220.0
+      ],
+      "volume_cm3": 138.8,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1072
+    },
+    {
+      "part": "05_arm_rear_156",
+      "print_bounds_mm": [
+        42.0,
+        44.0,
+        156.0
+      ],
+      "volume_cm3": 94.37,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 724
+    },
+    {
+      "part": "06_arm_front_165",
+      "print_bounds_mm": [
+        42.0,
+        44.0,
+        165.0
+      ],
+      "volume_cm3": 98.91,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1400
+    },
+    {
+      "part": "07_corner_cover",
+      "print_bounds_mm": [
+        48.0,
+        54.0,
+        44.0
+      ],
+      "volume_cm3": 26.32,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 746
+    },
+    {
+      "part": "08_rounded_LED_head",
+      "print_bounds_mm": [
+        320.0,
+        81.0,
+        22.0
+      ],
+      "volume_cm3": 143.81,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1510
+    },
+    {
+      "part": "09_UGREEN_59x35x23_cradle",
+      "print_bounds_mm": [
+        74.0,
+        63.0,
+        29.0
+      ],
+      "volume_cm3": 34.99,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1038
+    },
+    {
+      "part": "10_camera_rear_keeper",
+      "print_bounds_mm": [
+        74.0,
+        50.0,
+        4.0
+      ],
+      "volume_cm3": 7.97,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 544
+    },
+    {
+      "part": "11_column_slide_dock",
+      "print_bounds_mm": [
+        54.0,
+        70.0,
+        20.0
+      ],
+      "volume_cm3": 40.87,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1008
+    },
+    {
+      "part": "12_open_screen_carrier",
+      "print_bounds_mm": [
+        180.0,
+        54.32,
+        128.0
+      ],
+      "volume_cm3": 127.43,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 1614
+    },
+    {
+      "part": "13_screen_lower_foot_left",
+      "print_bounds_mm": [
+        36.0,
+        33.4,
+        33.0
+      ],
+      "volume_cm3": 13.05,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 200
+    },
+    {
+      "part": "14_screen_lower_foot_right",
+      "print_bounds_mm": [
+        36.0,
+        33.4,
+        33.0
+      ],
+      "volume_cm3": 13.05,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 200
+    },
+    {
+      "part": "15_screen_sliding_upper_jaw",
+      "print_bounds_mm": [
+        36.0,
+        33.4,
+        136.0
+      ],
+      "volume_cm3": 28.16,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 214
+    },
+    {
+      "part": "16_tube_fit_coupon",
+      "print_bounds_mm": [
+        36.0,
+        36.0,
+        12.0
+      ],
+      "volume_cm3": 10.37,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 226
+    },
+    {
+      "part": "17_slide_fit_coupon",
+      "print_bounds_mm": [
+        54.0,
+        20.0,
+        14.0
+      ],
+      "volume_cm3": 7.68,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 28
+    },
+    {
+      "part": "18_slide_male_fit_coupon",
+      "print_bounds_mm": [
+        40.4,
+        15.0,
+        14.0
+      ],
+      "volume_cm3": 6.97,
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 12
+    }
+  ],
+  "printed_part_intersections_mm3": [],
+  "device_envelope_intersections_mm3": [],
+  "motion_checks": [
+    {
+      "check": "upper_jaw_at_130mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "upper_jaw_at_150mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "upper_jaw_at_175mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "upper_jaw_at_200mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "upper_jaw_at_220mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "carrier_lift_0mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "carrier_lift_10mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "carrier_lift_30mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "carrier_lift_50mm",
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "carrier_lift_66mm",
+      "intersection_mm3": 0.0
+    }
+  ]
+}
