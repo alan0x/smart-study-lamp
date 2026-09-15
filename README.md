@@ -16,8 +16,9 @@
 ## 查看模型
 
 - `assembly_view_only.glb`：完整装配预览，包含设备和金属骨架占位，不可整体打印。
+- `assembly_view_only.3mf`：同一装配的 3MF 版，可直接用 Bambu Studio 打开逐件查看，不可打印。
 - `stl/`：18 个独立打印文件，单位均为毫米。
-- `renders/`：整灯与拆装渲染图。
+- `renders/`：整灯、爆炸图、分步装配与拆装渲染图。
 
 Windows 可直接尝试打开 GLB；也可使用 Blender。查看和切片 STL 可以使用 [Bambu Studio](https://bambulab.cn/zh-cn/download/studio)。
 
@@ -40,6 +41,8 @@ python model/build_lamp_v3.py
 ```
 
 脚本会在 `outputs/V3` 下重新生成 STL、预览图和校验结果。中文标注渲染目前会优先使用 Windows 的微软雅黑字体。
+
+整灯爆炸图由 `model/build_exploded_view.py` 生成，分步装配示意由 `model/build_assembly_steps.py` 生成（均会先完整运行建模脚本），分别输出到 `renders/台灯V3_爆炸图.png` 和 `renders/台灯V3_分步装配.png`。
 
 ## 版本状态
 
