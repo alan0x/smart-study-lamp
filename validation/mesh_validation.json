@@ -135,11 +135,11 @@
     {
       "part": "12_open_screen_carrier",
       "print_bounds_mm": [
-        180.0,
+        226.0,
         54.32,
         128.0
       ],
-      "volume_cm3": 127.43,
+      "volume_cm3": 135.59,
       "watertight": true,
       "connected_solids": 1,
       "triangles": 1614

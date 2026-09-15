@@ -28,7 +28,7 @@ OFF = {
     '10_camera_rear_keeper': (0, 0, -340),
     '11_column_slide_dock': (0, -60, 60),
     '12_open_screen_carrier': (0, 0, 200),
-    'iPad_mini_envelope': (0, -140, 200),
+    'iPad_Pro_11_envelope': (0, -140, 200),
     '13_screen_lower_foot_left': (-130, -260, 100),
     '14_screen_lower_foot_right': (130, -260, 100),
     '15_screen_sliding_upper_jaw': (0, -420, 0),
@@ -66,7 +66,7 @@ BADGES = {
     'steel_spine': ('G', 30, -60), 'steel_arm': ('G', -30, -50),
     'ballast_-110': ('P', -40, 25), 'ballast_110': ('P', 40, 25),
     'Mac_mini_envelope': ('M', 0, 55), 'LED_aluminum_envelope': ('L', 60, 20),
-    'UGREEN_case_envelope': ('C', -40, -45), 'iPad_mini_envelope': ('T', 50, -40),
+    'UGREEN_case_envelope': ('C', -40, -45), 'iPad_Pro_11_envelope': ('T', 50, -40),
 }
 meshes = dict((n, t) for n, t, c in items)
 

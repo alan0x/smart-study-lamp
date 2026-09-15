@@ -85,7 +85,7 @@ PANELS = [
                 '拆卸反向：先卸锁紧螺栓，托住设备，上提约 66 mm 取出'],
          items=pick(['12_open_screen_carrier', '13_screen_lower_foot_left',
                      '14_screen_lower_foot_right', '15_screen_sliding_upper_jaw',
-                     'iPad_mini_envelope'],
+                     'iPad_Pro_11_envelope'],
                     ctx=('03_column_lower_240', '11_column_slide_dock')),
          view=dict(az=125, el=15, center=(0, 35, 270), scale=2.2)),
 ]

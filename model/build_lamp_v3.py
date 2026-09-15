@@ -124,12 +124,13 @@ save('11_column_slide_dock',female,'#344945',print_rotate=(90,0,0))
 
 def tilt(s):return s.rotate((-12,0,0)).translate((0,-8,195))
 # Open T-frame: rear center spine + bottom crossbeam. All sides remain open.
-frame=box((34,8,128),(0,4,64))+box((180,8,28),(0,4,14))
+# Crossbeam widened for iPad Pro 11 (2021): feet reach ±106 to fully support the 247.6 mm bottom edge.
+frame=box((34,8,128),(0,4,64))+box((226,8,28),(0,4,14))
 # Slots allow both lower feet to shift sideways.
 for sign in [-1,1]:
-    frame-=box((48,14,4.4),(sign*59,4,14))
-    frame-=box((48,3,8.2),(sign*59,1.5,14))
-    for x in [sign*35,sign*83]:
+    frame-=box((71,14,4.4),(sign*70.5,4,14))
+    frame-=box((71,3,8.2),(sign*70.5,1.5,14))
+    for x in [sign*35,sign*106]:
         frame-=cyl(2.2,14,(x,4,14),'y');frame-=cyl(4.1,3,(x,1.5,14),'y')
 for z in [115,125]:
     frame-=cyl(2.2,14,(0,4,z),'y');frame-=cyl(4.1,3,(0,1.5,z),'y')
@@ -146,10 +147,10 @@ def foot(x):
     s+=box((36,3,10),(x,-17.5,5))
     s-=cyl(2.2,14,(x,11.4,14),'y')
     return tilt(s)
-save('13_screen_lower_foot_left',foot(-55),print_rotate=(12,0,0))
-save('14_screen_lower_foot_right',foot(55),print_rotate=(12,0,0))
+save('13_screen_lower_foot_left',foot(-106),print_rotate=(12,0,0))
+save('14_screen_lower_foot_right',foot(106),print_rotate=(12,0,0))
 
-JAW_H=134.8
+JAW_H=178.5
 jaw=box((30,6,130),(0,11.4,JAW_H-65))
 jaw+=box((36,33.4,6),(0,-2.3,JAW_H+3))
 jaw+=box((36,3,11),(0,-17.5,JAW_H+.5))
@@ -167,7 +168,7 @@ save('18_slide_male_fit_coupon',prism([(-13,45.5),(13,45.5),(20.2,60.5),(-20.2,6
 
 # References are NOT printable deliverables, but checked for mechanical interference.
 ref('Mac_mini_envelope',rb((127,127,50),12,(0,-20,55)),'#909ca0')
-ref('iPad_mini_envelope',tilt(box((195.4,6.3,134.8),(0,-5.15,67.4))),'#263d45')
+ref('iPad_Pro_11_envelope',tilt(box((247.6,5.9,178.5),(0,-4.95,89.25))),'#263d45')
 ref('steel_spine',box((20,20,532),(0,99,274)),'#86999c')
 ref('steel_arm',box((20,384,20),(0,-83,550)),'#86999c')
 for x in [-110,110]:ref('ballast_'+str(x),box((30,180,20),(x,0,18)),'#737f7a')
@@ -269,7 +270,7 @@ for i,(n,a,c) in enumerate(assembled):
 device_clashes=[]
 for n,a,c in assembled:
     for nn,b,cc in refs:
-        if nn not in ['Mac_mini_envelope','iPad_mini_envelope','UGREEN_case_envelope'] and not nn.startswith('ballast'):continue
+        if nn not in ['Mac_mini_envelope','iPad_Pro_11_envelope','UGREEN_case_envelope'] and not nn.startswith('ballast'):continue
         vol=intersect(a,b)
         if vol>.1:device_clashes.append([n,nn,round(vol,3)])
 motion_checks=[]
